@@ -1,4 +1,4 @@
-# Nom du projet
+# Spicy Food
 
 Spicy Food est le front du site d'un restaurant.
 
