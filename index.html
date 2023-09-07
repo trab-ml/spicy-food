@@ -3,10 +3,81 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- main css file -->
     <link href="./src/dist/output.css" rel="stylesheet" />
+
     <title>Spicy Food</title>
   </head>
-  <body>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
+  <body class="min-w-{300px} border-solid border-2 border-sky-500 box-border">
+    <!-- main container  -->
+    <div class="border-2 border-yellow-500">
+      <header class="relative w-full h-screen border-2 border-red-500">
+        <img
+          src="./src/dist/assets/imgs/header-hero.png"
+          alt="plants"
+          class="w-full h-screen object-cover"
+        />
+
+        <h1
+          class="absolute top-[40vh] flex place-self-center text-5xl text-center font-extrabold font-size text-white"
+        >
+          We take care of what we cook, from our farm to your plate !
+        </h1>
+
+        <div
+          class="absolute top-0 left-0 w-full flex flex-row justify-between items-center text-white"
+        >
+          <div class="">
+            <i class="m-2 mt-6 ml-6 fa-solid fa-bars text-4xl font-bold"></i>
+          </div>
+
+          <div class="w-[12rem] flex justify-end ">
+            <img
+              src="./src/dist/assets/imgs/logo-v3.png"
+              alt="plants"
+              class="w-12 m-2 mt-6 mr-6 object-cover"
+            />
+          </div>
+
+          <button
+            type="button"
+            class="xs:hidden md:block w-[12rem]  m-2 mt-6 mr-4 font-bold border-solid border-2 border-white normal-case p-2"
+          >
+            Make a reservation
+          </button>
+        </div>
+
+        <!-- <button
+          type="button"
+          class="flex justify-center items-center select-none bg-red-500 border-2 text-white text-xl font-bold p-2 m-2 rounded-full shadow h-20 w-20 focus:outline-none focus:shadow-outline"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="black"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-x"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button> -->
+      </header>
+    </div>
   </body>
 </html>
