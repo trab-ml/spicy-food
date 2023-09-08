@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- font awesome link -->
+    <!-- font awesome cdn link -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -18,10 +18,13 @@
 
     <title>Spicy Food</title>
   </head>
-  <body class="min-w-{300px} border-solid border-2 border-sky-500 box-border">
-    <!-- main container  -->
-    <div class="border-2 border-yellow-500">
-      <header class="relative w-full h-screen border-2 border-red-500">
+
+  <!-- body container -->
+  <body class="min-w-{300px} max-w-5xl lg:mx-auto">
+    <!-- body main container -->
+    <div>
+      <!-- header container -->
+      <header class="relative w-full h-screen">
         <img
           src="./src/dist/assets/imgs/header-hero.png"
           alt="plants"
@@ -29,7 +32,7 @@
         />
 
         <h1
-          class="absolute top-[40vh] flex place-self-center text-5xl text-center font-extrabold font-size text-white"
+          class="absolute top-[45vh] flex place-self-center text-2xl sm:text-5xl text-center font-extrabold text-white lg:top-[50vh] mx-auto"
         >
           We take care of what we cook, from our farm to your plate !
         </h1>
@@ -37,47 +40,183 @@
         <div
           class="absolute top-0 left-0 w-full flex flex-row justify-between items-center text-white"
         >
-          <div class="">
-            <i class="m-2 mt-6 ml-6 fa-solid fa-bars text-6xl font-bold md:text-8xl"></i>
+          <div>
+            <i
+              class="m-2 mt-6 ml-6 fa-solid fa-bars text-6xl font-bold md:text-8xl hover:cursor-pointer hover:text-black"
+            ></i>
           </div>
 
-          <div class="w-[12rem] flex justify-end md:w-[24rem] md:justify-center">
+          <div
+            class="w-[12rem] flex justify-end md:w-[24rem] md:justify-center"
+          >
             <img
               src="./src/dist/assets/imgs/logo-v3.png"
               alt="plants"
-              class="w-2/4 m-2 mt-6 mr-6 object-cover md:w-1/3 md:mr-0"
+              class="w-2/4 m-2 mt-6 mr-6 object-cover md:w-1/3 md:mr-0 hover:cursor-pointer"
+              title="Spicy Food"
             />
           </div>
 
-          <button
-            type="button"
-            class="xs:hidden md:block w-[13rem] m-2 mt-6 mr-4 font-extrabold text-3xl border-solid border-2 border-white normal-case p-2"
+          <a
+            href="./src/dist/pages/coming-soon.html"
+            class="xs:hidden md:block w-[13rem] m-2 mt-6 mr-4 p-2 text-center font-extrabold text-3xl border-solid border-2 border-white normal-case hover:bg-black hover:cursor-pointer"
           >
             Make a reservation
-          </button>
+          </a>
         </div>
-
-        <!-- <button
-          type="button"
-          class="flex justify-center items-center select-none bg-red-500 border-2 text-white text-xl font-bold p-2 m-2 rounded-full shadow h-20 w-20 focus:outline-none focus:shadow-outline"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="40"
-            height="40"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="black"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="feather feather-x"
-          >
-            <line x1="18" y1="6" x2="6" y2="18"></line>
-            <line x1="6" y1="6" x2="18" y2="18"></line>
-          </svg>
-        </button> -->
       </header>
+      <!-- header container end -->
+
+      <!-- main section -->
+      <main>
+        <!-- about menu container -->
+        <div class="h-screen flex flex-col sm:flex-row sm:items-center">
+          <!-- menu text -->
+          <div class="w-full sm:w-1/2 h-1/2 sm:h-full sm:flex sm:flex-col sm:justify-center">
+            <h2 class="mx-4 mt-4 text-xl sm:text-4xl font-bold">Menu</h2>
+            <p class="mx-2 p-[1px] text-xs sm:m-2 sm:p-2">
+              Step into a world of gastronomic delights with our thoughtfully
+              curated menu. From savory appetizers to mouthwatering entrees and
+              delectable desserts, our menu is a testament to our commitment to
+              quality and innovation. Every dish is a masterpiece, prepared by
+              our talented chefs who are dedicated to delivering the finest
+              dining experience.
+            </p>
+
+            <a
+             href="./src/dist/pages/coming-soon.html"
+              class="w-[10rem] text-center mx-4 p-2 font-semibold text-xs border-solid border-2 border-black hover:bg-black hover:cursor-pointer hover:text-white"
+            >
+              View Menu
+            </a>
+          </div>
+          <!-- menu text -->
+
+          <div class="w-full sm:w-1/2 h-1/2 sm:h-full mx-auto overflow-hidden box-border">
+            <img
+              src="./src/dist/assets/imgs/cooking.png"
+              alt="fried meat"
+              class="w-full h-full object-cover hover:scale-[1.1] hover:cursor-pointer ease-in-out duration-300"
+            />
+          </div>
+        </div>
+        <!-- about menu container end -->
+
+        <!-- about our vegetables/plants -->
+        <div class="sm:h-screen">
+          <!-- cutting vegetables -->
+          <div class="h-screen sm:h-1/2 flex flex-col sm:flex-row my-1">
+            <div class="w-full h-2/3 sm:h-full overflow-hidden box-border">
+              <img
+                src="./src/dist/assets/imgs/cutting-vegetables.png"
+                alt="cutting vegetables"
+                class="w-full h-full object-cover hover:scale-[1.1] hover:cursor-pointer ease-in-out duration-300"
+              />
+            </div>
+
+            <div class="w-full h-1/3 sm:h-full sm:flex sm:items-center">
+              <p class="text-xl text-center mt-[2.8rem] sm:mt-0 md:m-auto">
+                We love what we do that’s what we do it carefully !
+              </p>
+            </div>
+          </div>
+          <!-- cutting vegetables end -->
+
+          <!-- growing plant  -->
+          <div class="h-screen sm:h-1/2 flex flex-col sm:flex-row-reverse">
+            <div class="w-full h-2/3 sm:h-full overflow-hidden box-border">
+              <img
+                src="./src/dist/assets/imgs/growing-plant.png"
+                alt="growing plant"
+                class="w-full h-full object-cover hover:scale-[1.1] hover:cursor-pointer ease-in-out duration-300"
+              />
+            </div>
+
+            <div class="w-full h-1/3 sm:h-full sm:flex sm:items-center">
+              <p class="text-xl text-center mt-[2rem]">
+                You will be charmed by the fresh vegetables grown naturally on
+                our local farms.
+              </p>
+            </div>
+          </div>
+          <!-- growing plant end -->
+
+        </div>
+        <!-- about our vegetables/plants end-->
+
+        <!-- perfect wine -->
+        <div class="relative h-screen">
+          <div class="h-full overflow-hidden">
+            <img
+            src="./src/dist/assets/imgs/perfect-wine.png"
+            alt="perfect wine"
+            class="w-full h-full object-cover hover:scale-[1.1] hover:cursor-pointer ease-in-out duration-300 "
+          />
+          </div>
+
+          <div class="absolute top-[6rem] h-full md:flex md:flex-col md:justify-center md:top-0 text-white">
+            <div>
+              <h3 class="m-2 ml-4 text-lg sm:text-3xl font-bold">
+                Savor the perfect wine pairing
+              </h3>
+  
+              <p class="mx-4 text-justify md:leading-[2rem]">
+                Elevate your meal with our exquisite wine selection. Our
+                sommeliers have carefully chosen a variety of wines that perfectly
+                complement our dishes, ensuring each sip enhances the flavors of
+                your meal. Whether you're a seasoned wine connoisseur or a novice,
+                our wine list offers something for every palate.
+              </p>
+  
+              <a 
+                href="./src/dist/pages/coming-soon.html"
+                class="block w-[12rem] text-center ml-4 mt-6 p-2 font-bold text-xs md:text-lg border-solid border-2 border-white capitalize hover:bg-black hover:cursor-pointer"
+              >
+                View wines
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- perfect wine end -->
+
+        <!-- perfect cocktail -->
+        <div class="relative h-screen">
+          <div class=" h-full overflow-hidden">
+            <img
+            src="./src/dist/assets/imgs/perfect-cocktail.png"
+            alt="perfect wine"
+            class="w-full h-full object-cover hover:scale-[1.1] hover:cursor-pointer ease-in-out duration-300"
+            />
+          </div>
+
+          <div class="absolute top-[6rem] h-full md:flex md:flex-col md:justify-center md:top-0 text-white">
+            <div>
+              <h3 class="m-2 ml-4 text-lg sm:text-3xl font-bold">
+                Refresh with our handcrafted soda and cocktails
+              </h3>
+  
+              <p class="mx-4 text-justify">
+                Quench your thirst with our handcrafted sodas and cocktails. Our
+                bartenders are masters in the art of mixology, crafting unique and
+                refreshing beverages that will invigorate your taste buds. From
+                classic cocktails to innovative concoctions, our drink menu is a
+                testament to our commitment to excellence.
+              </p>
+
+              <a 
+                href="./src/dist/pages/coming-soon.html"
+                class="block w-[12rem] text-center ml-4 mt-6 p-2 font-bold text-xs md:text-lg border-solid border-2 border-white capitalize hover:bg-black hover:cursor-pointer"
+              >
+                View cocktails
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- perfect cocktail end -->
+      </main>
+      <!-- main section end -->
     </div>
+    <!-- body main container end -->
   </body>
+  <!-- body container end -->
 </html>
