@@ -32,7 +32,7 @@
         />
 
         <h1
-          class="absolute top-[40vh] flex place-self-center text-5xl text-center font-extrabold text-white lg:top-[50vh] mx-auto"
+          class="absolute top-[45vh] flex place-self-center text-2xl sm:text-5xl text-center font-extrabold text-white lg:top-[50vh] mx-auto"
         >
           We take care of what we cook, from our farm to your plate !
         </h1>
@@ -70,13 +70,11 @@
       <!-- main section -->
       <main>
         <!-- about menu container -->
-        <div
-          class="h-screen flex flex-col md:flex-row border-dotted border-2 border-red-500"
-        >
+        <div class="h-screen flex flex-col sm:flex-row sm:items-center">
           <!-- menu text -->
-          <div class="w-full h-1/2 border-dashed border-2">
-            <h2 class="m-2 p-2 text-4xl font-bold">Menu</h2>
-            <p class="m-2 p-2">
+          <div class="w-full sm:w-1/2 h-1/2 sm:h-full sm:flex sm:flex-col sm:justify-center">
+            <h2 class="mx-4 mt-4 text-xl sm:text-4xl font-bold">Menu</h2>
+            <p class="mx-2 p-[1px] text-xs sm:m-2 sm:p-2">
               Step into a world of gastronomic delights with our thoughtfully
               curated menu. From savory appetizers to mouthwatering entrees and
               delectable desserts, our menu is a testament to our commitment to
@@ -87,26 +85,134 @@
 
             <button
               type="button"
-              class="w-[10rem] m-2 p-2 font-semibold text-xs border-solid border-2 border-black hover:bg-black hover:cursor-pointer hover:text-white"
+              class="w-[10rem] mx-4 p-2 font-semibold text-xs border-solid border-2 border-black hover:bg-black hover:cursor-pointer hover:text-white"
             >
               View Menu
             </button>
           </div>
           <!-- menu text -->
 
-          <div class="w-full h-1/2 overflow-hidden box-border border-dashed border-2 border-yellow-500">
+          <div class="w-full sm:w-1/2 h-1/2 sm:h-full mx-auto overflow-hidden box-border">
             <img
               src="./src/dist/assets/imgs/cooking.png"
               alt="fried meat"
               class="w-full h-full object-cover hover:scale-[1.1] hover:cursor-pointer ease-in-out duration-300"
             />
           </div>
+        </div>
+        <!-- about menu container end -->
+
+        <!-- about our vegetables/plants -->
+        <div class="sm:h-screen">
+          <!-- cutting vegetables -->
+          <div class="h-screen sm:h-1/2 flex flex-col sm:flex-row my-1">
+            <div class="w-full h-2/3 sm:h-full overflow-hidden box-border">
+              <img
+                src="./src/dist/assets/imgs/cutting-vegetables.png"
+                alt="cutting vegetables"
+                class="w-full h-full object-cover hover:scale-[1.1] hover:cursor-pointer ease-in-out duration-300"
+              />
+            </div>
+
+            <div class="w-full h-1/3 sm:h-full sm:flex sm:items-center">
+              <p class="text-xl text-center mt-[2.8rem] sm:mt-0">
+                We love what we do that’s what we do it carefully !
+              </p>
+            </div>
+          </div>
+          <!-- cutting vegetables end -->
+
+          <!-- growing plant  -->
+          <div class="h-screen sm:h-1/2 flex flex-col sm:flex-row-reverse">
+            <div class="w-full h-2/3 sm:h-full overflow-hidden box-border">
+              <img
+                src="./src/dist/assets/imgs/growing-plant.png"
+                alt="growing plant"
+                class="w-full h-full object-cover hover:scale-[1.1] hover:cursor-pointer ease-in-out duration-300"
+              />
+            </div>
+
+            <div class="w-full h-1/3 sm:h-full sm:flex sm:items-center">
+              <p class="text-xl text-center mt-[2rem]">
+                You will be charmed by the fresh vegetables grown naturally on
+                our local farms.
+              </p>
+            </div>
+          </div>
+          <!-- growing plant end -->
 
         </div>
-        <!-- about menu container -->
+        <!-- about our vegetables/plants end-->
 
-        <!-- cutting vegetables -->
-        <!-- growing plant -->
+        <!-- perfect wine -->
+        <div class="relative h-screen">
+          <div class="h-full overflow-hidden">
+            <img
+            src="./src/dist/assets/imgs/perfect-wine.png"
+            alt="perfect wine"
+            class="w-full h-full object-cover hover:scale-[1.1] hover:cursor-pointer ease-in-out duration-300 "
+          />
+          </div>
+
+          <div class="absolute top-[6rem] h-full md:flex md:flex-col md:justify-center md:top-0 text-white">
+            <div>
+              <h3 class="m-2 ml-4 text-lg sm:text-3xl font-bold">
+                Savor the perfect wine pairing
+              </h3>
+  
+              <p class="mx-4 text-justify md:leading-[2rem]">
+                Elevate your meal with our exquisite wine selection. Our
+                sommeliers have carefully chosen a variety of wines that perfectly
+                complement our dishes, ensuring each sip enhances the flavors of
+                your meal. Whether you're a seasoned wine connoisseur or a novice,
+                our wine list offers something for every palate.
+              </p>
+  
+              <button
+                type="button"
+                class="w-[10rem] ml-4 mt-6 p-2 font-bold text-xs border-solid border-2 border-white capitalize hover:bg-black hover:cursor-pointer"
+              >
+                View wines
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- perfect wine end -->
+
+        <!-- perfect cocktail -->
+        <div class="relative h-screen">
+          <div class=" h-full overflow-hidden">
+            <img
+            src="./src/dist/assets/imgs/perfect-cocktail.png"
+            alt="perfect wine"
+            class="w-full h-full object-cover hover:scale-[1.1] hover:cursor-pointer ease-in-out duration-300"
+            />
+          </div>
+
+          <div class="absolute top-[6rem] h-full md:flex md:flex-col md:justify-center md:top-0 text-white">
+            <div>
+              <h3 class="m-2 ml-4 text-lg sm:text-3xl font-bold">
+                Refresh with our handcrafted soda and cocktails
+              </h3>
+  
+              <p class="mx-4 text-justify">
+                Quench your thirst with our handcrafted sodas and cocktails. Our
+                bartenders are masters in the art of mixology, crafting unique and
+                refreshing beverages that will invigorate your taste buds. From
+                classic cocktails to innovative concoctions, our drink menu is a
+                testament to our commitment to excellence.
+              </p>
+  
+              <button
+                type="button"
+                class="w-[10rem] ml-4 mt-6 p-2 font-bold text-xs border-solid border-2 border-white capitalize hover:bg-black hover:cursor-pointer"
+              >
+                View cocktails
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- perfect cocktail end -->
       </main>
       <!-- main section end -->
     </div>
