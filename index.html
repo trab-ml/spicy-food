@@ -31,7 +31,9 @@
           class="w-full h-screen object-cover"
         />
 
-        <h1
+        <!-- header main section -->
+        <section>
+          <h1
           class="absolute top-[45vh] flex place-self-center text-2xl sm:text-5xl text-center font-extrabold text-white lg:top-[50vh] mx-auto"
         >
           We take care of what we cook, from our farm to your plate !
@@ -40,7 +42,7 @@
         <div
           class="absolute top-0 left-0 w-full flex flex-row justify-between items-center text-white"
         >
-          <div>
+          <div id="menubars">
             <i
               class="m-2 mt-6 ml-6 fa-solid fa-bars text-6xl font-bold md:text-8xl hover:cursor-pointer hover:text-black"
             ></i>
@@ -64,6 +66,24 @@
             Make a reservation
           </a>
         </div>
+        </section>
+        <!-- header main section end -->
+
+        <!-- sidebar section -->
+        <section id="sidebar" class="hidden fixed top-0 w-[18rem] w--1/2 h-screen z-50 bg-black transition-opacity animate-customFadeIn">
+          <nav id="navbar" class="h-1/2 flex flex-col items-center">
+            <span id="closeSidebarBtn" class="mt-5"><i class="fa-solid fa-xmark text-white text-4xl hover:cursor-pointer"></i></span>
+
+            <ul class="flex flex-col gap-5 mt-5 uppercase text-white">
+              <li class="hover:cursor-pointer hover:underline"><span><i class="fa-solid fa-utensils mr-2"></i></span> <a href="./src/dist/pages/coming-soon.html">news</a></li>
+              <li class="hover:cursor-pointer hover:underline"><span><i class="fa-solid fa-calendar-check mr-2"></i></span> <a href="./src/dist/pages/coming-soon.html">make a reservation</a> </li>
+              <li class="hover:cursor-pointer hover:underline"><span><i class="fa-solid fa-location-dot mr-2"></i></span> <a href="./src/dist/pages/coming-soon.html">find us</a> </li>
+              <li class="hover:cursor-pointer hover:underline"><span><i class="fa-solid fa-briefcase mr-[4px]"></i></span> <a href="./src/dist/pages/coming-soon.html">work with us</a> </li>
+              <li class="hover:cursor-pointer hover:underline"><span><i class="fa-solid fa-phone-volume mr-[4px]"></i></span> <a href="./src/dist/pages/coming-soon.html">contact us</a> </li>
+            </ul>
+          </nav>
+        </section>
+        <!-- sidebar section end -->
       </header>
       <!-- header container end -->
 
@@ -224,12 +244,12 @@
       <!-- main section end -->
 
       <!-- footer section end -->
-      <footer class="h-screenn">
+      <footer class=" box-border">
         <!-- footer main container -->
-        <div class="w-full">
-          <div class="md:m-1 md:flex md:flex-row md:justify-center md:gap-2 md:m-auto">
+        <div class="w-full box-border">
+          <div class="md:flex md:flex-row md:justify-between md:p-2 box-border">
             <!-- contact section -->
-            <section class="w-2/3 md:w-1/3 m-auto md:m-0 md:p-0">
+            <section class="w-2/3 md:w-1/4 m-auto md:m-0 md:p-0">
               <h4
                 class="my-2 text-md sm:text-3xl border-b-2 border-solid border-black font-bold"
               >
@@ -243,8 +263,30 @@
             </section>
             <!-- contact section  end-->
 
+            <!-- about reservation section -->
+            <section class="w-2/3 md:w-1/4 m-auto md:m-0 md:p-0">
+              <h4
+                class="my-2 text-md sm:text-3xl capitalize font-bold border-b-2 border-solid border-black"
+              >
+                Reservations
+              </h4>
+              <p class="text-justify">
+                Reserve your table now and embark on a culinary journey like no
+                other. We look forward to welcoming you to
+                <span class="font-bold">spicy food</span>
+                and creating unforgettable memories together.
+              </p>
+              <a
+                href="./src/dist/pages/coming-soon.html"
+                class="block w-[12rem] m-autoo text-center my-6 p-2 text-white bg-black font-bold text-xs md:text-lg border-solid border-2 hover:cursor-pointer hover:text-black hover:bg-white hover:border-black"
+              >
+                Make a reservation
+              </a>
+            </section>
+            <!-- about reservation section end -->
+
             <!-- social network section -->
-            <section class="w-2/3 md:w-1/3 m-auto md:m-0 md:p-0">
+            <section class="w-2/3 md:w-1/4 m-auto md:m-0 md:p-0">
               <h4
                 class="my-2 text-md sm:text-3xl capitalize border-b-2 border-solid border-black font-bold"
               >
@@ -284,32 +326,10 @@
               </div>
             </section>
             <!-- social network section end -->
-
-            <!-- about reservation section -->
-            <section class="w-2/3 md:w-1/3 m-auto md:m-0 md:p-0">
-              <h4
-                class="my-2 text-md sm:text-3xl capitalize font-bold border-b-2 border-solid border-black"
-              >
-                Reservations
-              </h4>
-              <p class="text-justify">
-                Reserve your table now and embark on a culinary journey like no
-                other. We look forward to welcoming you to
-                <span class="font-bold">spicy food</span>
-                and creating unforgettable memories together.
-              </p>
-              <a
-                href="./src/dist/pages/coming-soon.html"
-                class="block w-[12rem] m-autoo text-center my-6 p-2 text-white bg-black font-bold text-xs md:text-lg hover:cursor-pointer hover:text-black hover:bg-white hover:border-solid hover:border-2 hover:border-black"
-              >
-                Make a reservation
-              </a>
-            </section>
-            <!-- about reservation section end -->
           </div>
 
           <!-- privacy/services section -->
-          <section class="w-2/3 md:w-full md:md:m-1 m-auto">
+          <section class="w-2/3 md:w-full m-auto md:m-0 md:p-2 box-border">
             <h4
               class="my-2 text-md sm:text-3xl capitalize border-b-2 border-solid border-black font-bold"
             >
@@ -356,6 +376,9 @@
       <!-- footer section end -->
     </div>
     <!-- body main container end -->
+
+    <!-- js file -->
+    <script src="./src/dist/scripts/index.js"></script>
   </body>
   <!-- body container end -->
 </html>
