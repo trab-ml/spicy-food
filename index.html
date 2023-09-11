@@ -3,10 +3,424 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font awesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- main css file -->
     <link href="./src/dist/output.css" rel="stylesheet" />
+
     <title>Spicy Food</title>
   </head>
-  <body>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
+
+  <!-- body container -->
+  <body class="min-w-{300px} max-w-5xl lg:mx-auto">
+    <!-- body main container -->
+    <div>
+      <!-- header container -->
+      <header class="relative w-full h-screen">
+        <img
+          src="./src/dist/assets/imgs/header-hero.png"
+          alt="plants"
+          class="w-full h-screen object-cover"
+        />
+
+        <!-- header main section -->
+        <section>
+          <h1
+            class="absolute top-[45vh] flex place-self-center text-2xl sm:text-5xl text-center font-extrabold text-white lg:top-[50vh] mx-auto"
+          >
+            We take care of what we cook, from our farm to your plate !
+          </h1>
+
+          <div
+            class="absolute top-0 left-0 w-full flex flex-row justify-between items-center text-white"
+          >
+            <div id="menubars">
+              <i
+                class="m-2 mt-6 ml-6 fa-solid fa-bars text-6xl font-bold md:text-8xl hover:cursor-pointer hover:text-black"
+              ></i>
+            </div>
+
+            <div
+              class="w-[12rem] flex justify-end md:w-[24rem] md:justify-center"
+            >
+              <img
+                src="./src/dist/assets/imgs/logo-v3.png"
+                alt="plants"
+                class="w-2/4 h-full m-2 mt-6 mr-6 object-cover md:w-1/3 md:mr-0 hover:cursor-pointer"
+                title="Spicy Food"
+              />
+            </div>
+
+            <a
+              href="./src/dist/pages/coming-soon.html"
+              class="xs:hidden md:block w-[13rem] m-2 mt-6 mr-4 p-2 text-center font-extrabold text-3xl border-solid border-2 border-white normal-case hover:bg-black hover:cursor-pointer"
+              aria-label="Make a reservation to eat in our restaurant"
+              >
+              Make a reservation
+            </a>
+          </div>
+        </section>
+        <!-- header main section end -->
+
+        <!-- sidebar section -->
+        <section
+          id="sidebar"
+          class="hidden fixed top-0 w-[18rem] w--1/2 h-screen z-50 bg-black transition-opacity animate-customFadeIn"
+        >
+          <nav id="navbar" class="h-1/2 flex flex-col items-center">
+            <span class="closeSidebarBtn mt-5"
+              ><i
+                class="fa-solid fa-xmark text-white text-4xl hover:cursor-pointer"
+              ></i
+            ></span>
+
+            <ul class="flex flex-col gap-5 mt-5 uppercase text-white">
+              <li class="hover:cursor-pointer hover:underline">
+                <span><i class="fa-solid fa-utensils mr-2"></i></span>
+                <a href="./src/dist/pages/coming-soon.html" aria-label="Learn more about our new dishes">news</a>
+              </li>
+              <li class="hover:cursor-pointer hover:underline">
+                <span><i class="fa-solid fa-calendar-check mr-2"></i></span>
+                <a href="./src/dist/pages/coming-soon.html" aria-label="Make a reservation to eat in our restaurant"
+                  >make a reservation</a
+                >
+              </li>
+              <li class="hover:cursor-pointer hover:underline">
+                <span><i class="fa-solid fa-location-dot mr-2"></i></span>
+                <a href="./src/dist/pages/coming-soon.html" aria-label="Use a online map to find our location">find us</a>
+              </li>
+              <li class="hover:cursor-pointer hover:underline">
+                <span><i class="fa-solid fa-briefcase mr-[4px]"></i></span>
+                <a href="./src/dist/pages/coming-soon.html" aria-label="Learn more about working with us">work with us</a>
+              </li>
+              <li class="hover:cursor-pointer hover:underline">
+                <span><i class="fa-solid fa-phone-volume mr-[4px]"></i></span>
+                <a href="#footer" aria-label="Contact us for more information" class="closeSidebarBtn">contact us</a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+        <!-- sidebar section end -->
+      </header>
+      <!-- header container end -->
+
+      <!-- main section -->
+      <main>
+        <!-- about menu container -->
+        <div class="h-screen flex flex-col sm:flex-row sm:items-center">
+          <!-- menu text -->
+          <section
+            class="w-full sm:w-1/2 h-1/2 sm:h-full sm:flex sm:flex-col sm:justify-center"
+          >
+            <h2 class="mt-4 mx-4 text-xl sm:text-4xl font-bold">Menu</h2>
+            <p class="m-4 p-[1px] text-xs sm:m-2 sm:p-2">
+              Step into a world of gastronomic delights with our thoughtfully
+              curated menu. From savory appetizers to mouthwatering entrees and
+              delectable desserts, our menu is a testament to our commitment to
+              quality and innovation. Every dish is a masterpiece, prepared by
+              our talented chefs who are dedicated to delivering the finest
+              dining experience.
+            </p>
+
+            <a
+              href="./src/dist/pages/coming-soon.html"
+              class="w-[10rem] text-center mx-4 p-2 font-semibold text-xs border-solid border-2 border-black hover:bg-black hover:cursor-pointer hover:text-white"
+              aria-label="Learn more about our menu"
+              >
+              View Menu
+            </a>
+          </section>
+          <!-- menu text -->
+
+          <div
+            class="w-full sm:w-1/2 h-1/2 sm:h-full mx-auto overflow-hidden box-border"
+          >
+            <img
+              src="./src/dist/assets/imgs/cooking.png"
+              alt="fried meat"
+              class="w-full h-full object-cover hover:scale-[1.1] hover:cursor-pointer ease-in-out duration-300"
+            />
+          </div>
+        </div>
+        <!-- about menu container end -->
+
+        <!-- about our vegetables/plants -->
+        <div class="sm:h-screen">
+          <!-- cutting vegetables -->
+          <div class="h-screen sm:h-1/2 flex flex-col sm:flex-row my-1">
+            <div class="w-full h-2/3 sm:h-full overflow-hidden box-border">
+              <img
+                src="./src/dist/assets/imgs/cutting-vegetables.png"
+                alt="cutting vegetables"
+                class="w-full h-full object-cover hover:scale-[1.1] hover:cursor-pointer ease-in-out duration-300"
+              />
+            </div>
+
+            <div class="w-full h-1/3 sm:h-full sm:flex sm:items-center">
+              <p class="text-xl text-center mt-[5rem] m-[0.5rem]">
+                We love what we do that’s what we do it carefully !
+              </p>
+            </div>
+          </div>
+          <!-- cutting vegetables end -->
+
+          <!-- growing plant  -->
+          <div class="h-screen sm:h-1/2 flex flex-col sm:flex-row-reverse">
+            <div class="w-full h-2/3 sm:h-full overflow-hidden box-border">
+              <img
+                src="./src/dist/assets/imgs/growing-plant.png"
+                alt="growing plant"
+                class="w-full h-full object-cover hover:scale-[1.1] hover:cursor-pointer ease-in-out duration-300"
+              />
+            </div>
+
+            <div class="w-full h-1/3 sm:h-full sm:flex sm:items-center">
+              <p class="text-xl text-center mt-[4rem] m-[0.5rem]">
+                You will be charmed by the fresh vegetables grown naturally on
+                our local farms.
+              </p>
+            </div>
+          </div>
+          <!-- growing plant end -->
+        </div>
+        <!-- about our vegetables/plants end-->
+
+        <!-- perfect wine -->
+        <div class="relative h-screen">
+          <div class="h-full overflow-hidden">
+            <img
+              src="./src/dist/assets/imgs/perfect-wine.png"
+              alt="perfect wine"
+              class="w-full h-full object-cover hover:scale-[1.1] hover:cursor-pointer ease-in-out duration-300"
+            />
+          </div>
+
+          <div
+            class="absolute top-[6rem] h-full md:flex md:flex-col md:justify-center md:top-0 text-white"
+          >
+            <section>
+              <h3 class="m-2 ml-4 text-lg sm:text-3xl font-bold">
+                Savor the perfect wine pairing
+              </h3>
+
+              <p class="mx-4 text-justify md:leading-[2rem]">
+                Elevate your meal with our exquisite wine selection. Our
+                sommeliers have carefully chosen a variety of wines that
+                perfectly complement our dishes, ensuring each sip enhances the
+                flavors of your meal. Whether you're a seasoned wine connoisseur
+                or a novice, our wine list offers something for every palate.
+              </p>
+
+              <a
+                href="./src/dist/pages/coming-soon.html"
+                class="block w-[12rem] text-center ml-4 mt-6 p-2 font-bold text-xs md:text-lg border-solid border-2 border-white capitalize hover:bg-black hover:cursor-pointer"
+                aria-label="Get a look on our delicious wines"
+                >
+                View wines
+              </a>
+            </section>
+          </div>
+        </div>
+        <!-- perfect wine end -->
+
+        <!-- perfect cocktail -->
+        <div class="relative h-screen">
+          <div class="h-full overflow-hidden">
+            <img
+              src="./src/dist/assets/imgs/perfect-cocktail.png"
+              alt="perfect wine"
+              class="w-full h-full object-cover hover:scale-[1.1] hover:cursor-pointer ease-in-out duration-300"
+            />
+          </div>
+
+          <div
+            class="absolute top-[6rem] h-full md:flex md:flex-col md:justify-center md:top-0 text-white"
+          >
+            <section>
+              <h3 class="m-2 ml-4 text-lg sm:text-3xl font-bold">
+                Refresh with our handcrafted soda and cocktails
+              </h3>
+
+              <p class="mx-4 text-justify">
+                Quench your thirst with our handcrafted sodas and cocktails. Our
+                bartenders are masters in the art of mixology, crafting unique
+                and refreshing beverages that will invigorate your taste buds.
+                From classic cocktails to innovative concoctions, our drink menu
+                is a testament to our commitment to excellence.
+              </p>
+
+              <a
+                href="./src/dist/pages/coming-soon.html"
+                class="block w-[12rem] text-center ml-4 mt-6 p-2 font-bold text-xs md:text-lg border-solid border-2 border-white capitalize hover:bg-black hover:cursor-pointer"
+                aria-label="View our delicious cocktails"
+                >
+                View cocktails
+              </a>
+            </section>
+          </div>
+        </div>
+        <!-- perfect cocktail end -->
+      </main>
+      <!-- main section end -->
+
+      <!-- footer section end -->
+      <footer id="footer" class="box-border">
+        <!-- footer main container -->
+        <div class="w-full box-border">
+          <div class="md:flex md:flex-row md:justify-between md:p-2 box-border">
+            <!-- contact section -->
+            <section class="w-2/3 md:w-1/4 m-auto md:m-0 md:p-0">
+              <h4
+                class="my-2 text-md sm:text-3xl border-b-2 border-solid border-black font-bold"
+              >
+                Contact
+              </h4>
+              <ul>
+                <li>8 rue de Londres (Paris 8)</li>
+                <li>+(33) 0321222324</li>
+                <li>
+                  <a
+                    href="mailto:spicyfood@gmail.com"
+                    class="hover:cursor-pointer hover:underline-offset-2"
+                    aria-label="contact us by email"
+                    >spicyfood@gmail.com</a
+                  >
+                </li>
+              </ul>
+            </section>
+            <!-- contact section  end-->
+
+            <!-- about reservation section -->
+            <section class="w-2/3 md:w-1/4 m-auto md:m-0 md:p-0">
+              <h4
+                class="my-2 text-md sm:text-3xl capitalize font-bold border-b-2 border-solid border-black"
+              >
+                Reservations
+              </h4>
+              <p class="text-justify">
+                Reserve your table now and embark on a culinary journey like no
+                other. We look forward to welcoming you to
+                <span class="font-bold">spicy food</span>
+                and creating unforgettable memories together.
+              </p>
+              <a
+                href="./src/dist/pages/coming-soon.html"
+                class="block w-[12rem] m-autoo text-center my-6 p-2 text-white bg-black font-bold text-xs md:text-lg border-solid border-2 hover:cursor-pointer hover:text-black hover:bg-white hover:border-black"
+                aria-label="Make a reservation to eat in our restaurant"
+                >
+                Make a reservation
+              </a>
+            </section>
+            <!-- about reservation section end -->
+
+            <!-- social network section -->
+            <section class="w-2/3 md:w-1/4 m-auto md:m-0 md:p-0">
+              <h4
+                class="my-2 text-md sm:text-3xl capitalize border-b-2 border-solid border-black font-bold"
+              >
+                Follow us
+              </h4>
+              <div class="flex gap-4">
+                <span
+                  ><a
+                    href="https://www.linkedin.com/"
+                    class="hover:cursor-pointer"
+                    aria-label="Follow us on linkedIn"
+                    ><i class="fa-brands fa-linkedin text-xl"></i></a
+                ></span>
+                <span>
+                  <a
+                    href="https://www.instagram.com/"
+                    class="hover:cursor-pointer"
+                    aria-label="Follow us on instagram"
+                  >
+                    <i class="fa-brands fa-instagram text-xl"></i>
+                  </a>
+                </span>
+                <span>
+                  <a
+                    href="https://www.twitter.com/"
+                    class="hover:cursor-pointer"
+                    aria-label="Follow us on twitter"
+                  >
+                    <i class="fa-brands fa-twitter text-xl"></i>
+                  </a>
+                </span>
+                <span>
+                  <a
+                    href="https://www.facebook.com/"
+                    class="hover:cursor-pointer"
+                    aria-label="Follow us on facebook"
+                  >
+                    <i class="fa-brands fa-facebook text-xl"></i>
+                  </a>
+                </span>
+              </div>
+            </section>
+            <!-- social network section end -->
+          </div>
+
+          <!-- privacy/services section -->
+          <section class="w-2/3 md:w-full m-auto md:m-0 md:p-2 box-border">
+            <h4
+              class="my-2 text-md sm:text-3xl capitalize border-b-2 border-solid border-black font-bold"
+            >
+              Spicy food
+            </h4>
+            <div class="flex items-center gap-4">
+              <span>
+                <img
+                  src="./src/dist/assets/imgs/fr-flag.jpg"
+                  alt="flag of France"
+                  class="w-[3rem] h-fit hover:cursor-pointer"
+                  title="France"
+                />
+              </span>
+              <span>
+                <a
+                  href="./src/dist/pages/coming-soon.html"
+                  class="text-xs md:text-lg hover:cursor-pointer hover:underline"
+                  aria-label="Get informations about our privacy policy"
+                >
+                  privacy policy
+                </a>
+              </span>
+              <span>
+                <a
+                  href="./src/dist/pages/coming-soon.html"
+                  class="text-xs md:text-lg hover:cursor-pointer hover:underline"
+                  aria-label="Get informations about our terms of service"
+                >
+                  terms of service
+                </a>
+              </span>
+            </div>
+          </section>
+          <!-- privacy/services section end -->
+
+          <!-- copyright -->
+          <div
+            class="w-full h-10 flex justify-center items-center mb-1 text-xs md:text-lg text-white bg-black"
+          >
+            © Spicy Food Restaurant 2023. All Right Reserved.
+          </div>
+        </div>
+        <!-- footer main container end -->
+      </footer>
+      <!-- footer section end -->
+    </div>
+    <!-- body main container end -->
+
+    <!-- js scripts -->
+    <script src="./src/dist/scripts/index.js"></script>
   </body>
+  <!-- body container end -->
 </html>
