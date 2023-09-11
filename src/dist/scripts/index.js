@@ -10,5 +10,7 @@ const sidebar = {
 // Add event listeners when the document is ready
 document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('menubars').addEventListener('click', sidebar.open);
-  document.getElementById('closeSidebarBtn').addEventListener('click', sidebar.close);
+  document.querySelectorAll('.closeSidebarBtn').forEach(htmlElt => {
+    htmlElt.addEventListener('click', sidebar.close);
+  });
 });

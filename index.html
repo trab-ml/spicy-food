@@ -34,52 +34,77 @@
         <!-- header main section -->
         <section>
           <h1
-          class="absolute top-[45vh] flex place-self-center text-2xl sm:text-5xl text-center font-extrabold text-white lg:top-[50vh] mx-auto"
-        >
-          We take care of what we cook, from our farm to your plate !
-        </h1>
-
-        <div
-          class="absolute top-0 left-0 w-full flex flex-row justify-between items-center text-white"
-        >
-          <div id="menubars">
-            <i
-              class="m-2 mt-6 ml-6 fa-solid fa-bars text-6xl font-bold md:text-8xl hover:cursor-pointer hover:text-black"
-            ></i>
-          </div>
+            class="absolute top-[45vh] flex place-self-center text-2xl sm:text-5xl text-center font-extrabold text-white lg:top-[50vh] mx-auto"
+          >
+            We take care of what we cook, from our farm to your plate !
+          </h1>
 
           <div
-            class="w-[12rem] flex justify-end md:w-[24rem] md:justify-center"
+            class="absolute top-0 left-0 w-full flex flex-row justify-between items-center text-white"
           >
-            <img
-              src="./src/dist/assets/imgs/logo-v3.png"
-              alt="plants"
-              class="w-2/4 m-2 mt-6 mr-6 object-cover md:w-1/3 md:mr-0 hover:cursor-pointer"
-              title="Spicy Food"
-            />
-          </div>
+            <div id="menubars">
+              <i
+                class="m-2 mt-6 ml-6 fa-solid fa-bars text-6xl font-bold md:text-8xl hover:cursor-pointer hover:text-black"
+              ></i>
+            </div>
 
-          <a
-            href="./src/dist/pages/coming-soon.html"
-            class="xs:hidden md:block w-[13rem] m-2 mt-6 mr-4 p-2 text-center font-extrabold text-3xl border-solid border-2 border-white normal-case hover:bg-black hover:cursor-pointer"
-          >
-            Make a reservation
-          </a>
-        </div>
+            <div
+              class="w-[12rem] flex justify-end md:w-[24rem] md:justify-center"
+            >
+              <img
+                src="./src/dist/assets/imgs/logo-v3.png"
+                alt="plants"
+                class="w-2/4 h-full m-2 mt-6 mr-6 object-cover md:w-1/3 md:mr-0 hover:cursor-pointer"
+                title="Spicy Food"
+              />
+            </div>
+
+            <a
+              href="./src/dist/pages/coming-soon.html"
+              class="xs:hidden md:block w-[13rem] m-2 mt-6 mr-4 p-2 text-center font-extrabold text-3xl border-solid border-2 border-white normal-case hover:bg-black hover:cursor-pointer"
+              aria-label="Make a reservation to eat in our restaurant"
+              >
+              Make a reservation
+            </a>
+          </div>
         </section>
         <!-- header main section end -->
 
         <!-- sidebar section -->
-        <section id="sidebar" class="hidden fixed top-0 w-[18rem] w--1/2 h-screen z-50 bg-black transition-opacity animate-customFadeIn">
+        <section
+          id="sidebar"
+          class="hidden fixed top-0 w-[18rem] w--1/2 h-screen z-50 bg-black transition-opacity animate-customFadeIn"
+        >
           <nav id="navbar" class="h-1/2 flex flex-col items-center">
-            <span id="closeSidebarBtn" class="mt-5"><i class="fa-solid fa-xmark text-white text-4xl hover:cursor-pointer"></i></span>
+            <span class="closeSidebarBtn mt-5"
+              ><i
+                class="fa-solid fa-xmark text-white text-4xl hover:cursor-pointer"
+              ></i
+            ></span>
 
             <ul class="flex flex-col gap-5 mt-5 uppercase text-white">
-              <li class="hover:cursor-pointer hover:underline"><span><i class="fa-solid fa-utensils mr-2"></i></span> <a href="./src/dist/pages/coming-soon.html">news</a></li>
-              <li class="hover:cursor-pointer hover:underline"><span><i class="fa-solid fa-calendar-check mr-2"></i></span> <a href="./src/dist/pages/coming-soon.html">make a reservation</a> </li>
-              <li class="hover:cursor-pointer hover:underline"><span><i class="fa-solid fa-location-dot mr-2"></i></span> <a href="./src/dist/pages/coming-soon.html">find us</a> </li>
-              <li class="hover:cursor-pointer hover:underline"><span><i class="fa-solid fa-briefcase mr-[4px]"></i></span> <a href="./src/dist/pages/coming-soon.html">work with us</a> </li>
-              <li class="hover:cursor-pointer hover:underline"><span><i class="fa-solid fa-phone-volume mr-[4px]"></i></span> <a href="./src/dist/pages/coming-soon.html">contact us</a> </li>
+              <li class="hover:cursor-pointer hover:underline">
+                <span><i class="fa-solid fa-utensils mr-2"></i></span>
+                <a href="./src/dist/pages/coming-soon.html" aria-label="Learn more about our new dishes">news</a>
+              </li>
+              <li class="hover:cursor-pointer hover:underline">
+                <span><i class="fa-solid fa-calendar-check mr-2"></i></span>
+                <a href="./src/dist/pages/coming-soon.html" aria-label="Make a reservation to eat in our restaurant"
+                  >make a reservation</a
+                >
+              </li>
+              <li class="hover:cursor-pointer hover:underline">
+                <span><i class="fa-solid fa-location-dot mr-2"></i></span>
+                <a href="./src/dist/pages/coming-soon.html" aria-label="Use a online map to find our location">find us</a>
+              </li>
+              <li class="hover:cursor-pointer hover:underline">
+                <span><i class="fa-solid fa-briefcase mr-[4px]"></i></span>
+                <a href="./src/dist/pages/coming-soon.html" aria-label="Learn more about working with us">work with us</a>
+              </li>
+              <li class="hover:cursor-pointer hover:underline">
+                <span><i class="fa-solid fa-phone-volume mr-[4px]"></i></span>
+                <a href="#footer" aria-label="Contact us for more information" class="closeSidebarBtn">contact us</a>
+              </li>
             </ul>
           </nav>
         </section>
@@ -108,7 +133,8 @@
             <a
               href="./src/dist/pages/coming-soon.html"
               class="w-[10rem] text-center mx-4 p-2 font-semibold text-xs border-solid border-2 border-black hover:bg-black hover:cursor-pointer hover:text-white"
-            >
+              aria-label="Learn more about our menu"
+              >
               View Menu
             </a>
           </section>
@@ -196,7 +222,8 @@
               <a
                 href="./src/dist/pages/coming-soon.html"
                 class="block w-[12rem] text-center ml-4 mt-6 p-2 font-bold text-xs md:text-lg border-solid border-2 border-white capitalize hover:bg-black hover:cursor-pointer"
-              >
+                aria-label="Get a look on our delicious wines"
+                >
                 View wines
               </a>
             </section>
@@ -233,7 +260,8 @@
               <a
                 href="./src/dist/pages/coming-soon.html"
                 class="block w-[12rem] text-center ml-4 mt-6 p-2 font-bold text-xs md:text-lg border-solid border-2 border-white capitalize hover:bg-black hover:cursor-pointer"
-              >
+                aria-label="View our delicious cocktails"
+                >
                 View cocktails
               </a>
             </section>
@@ -244,7 +272,7 @@
       <!-- main section end -->
 
       <!-- footer section end -->
-      <footer class=" box-border">
+      <footer id="footer" class="box-border">
         <!-- footer main container -->
         <div class="w-full box-border">
           <div class="md:flex md:flex-row md:justify-between md:p-2 box-border">
@@ -258,7 +286,14 @@
               <ul>
                 <li>8 rue de Londres (Paris 8)</li>
                 <li>+(33) 0321222324</li>
-                <li> <a href="mailto:spicyfood@gmail.com" class="hover:cursor-pointer hover:underline-offset-2">spicyfood@gmail.com</a> </li>
+                <li>
+                  <a
+                    href="mailto:spicyfood@gmail.com"
+                    class="hover:cursor-pointer hover:underline-offset-2"
+                    aria-label="contact us by email"
+                    >spicyfood@gmail.com</a
+                  >
+                </li>
               </ul>
             </section>
             <!-- contact section  end-->
@@ -279,7 +314,8 @@
               <a
                 href="./src/dist/pages/coming-soon.html"
                 class="block w-[12rem] m-autoo text-center my-6 p-2 text-white bg-black font-bold text-xs md:text-lg border-solid border-2 hover:cursor-pointer hover:text-black hover:bg-white hover:border-black"
-              >
+                aria-label="Make a reservation to eat in our restaurant"
+                >
                 Make a reservation
               </a>
             </section>
@@ -297,12 +333,14 @@
                   ><a
                     href="https://www.linkedin.com/"
                     class="hover:cursor-pointer"
+                    aria-label="Follow us on linkedIn"
                     ><i class="fa-brands fa-linkedin text-xl"></i></a
                 ></span>
                 <span>
                   <a
                     href="https://www.instagram.com/"
                     class="hover:cursor-pointer"
+                    aria-label="Follow us on instagram"
                   >
                     <i class="fa-brands fa-instagram text-xl"></i>
                   </a>
@@ -311,6 +349,7 @@
                   <a
                     href="https://www.twitter.com/"
                     class="hover:cursor-pointer"
+                    aria-label="Follow us on twitter"
                   >
                     <i class="fa-brands fa-twitter text-xl"></i>
                   </a>
@@ -319,6 +358,7 @@
                   <a
                     href="https://www.facebook.com/"
                     class="hover:cursor-pointer"
+                    aria-label="Follow us on facebook"
                   >
                     <i class="fa-brands fa-facebook text-xl"></i>
                   </a>
@@ -340,22 +380,24 @@
                 <img
                   src="./src/dist/assets/imgs/fr-flag.jpg"
                   alt="flag of France"
-                  class="w-[3rem] hover:cursor-pointer"
+                  class="w-[3rem] h-fit hover:cursor-pointer"
                   title="France"
                 />
               </span>
               <span>
                 <a
-                  href="./src/dist/pages/privacy-policy.html"
+                  href="./src/dist/pages/coming-soon.html"
                   class="text-xs md:text-lg hover:cursor-pointer hover:underline"
+                  aria-label="Get informations about our privacy policy"
                 >
                   privacy policy
                 </a>
               </span>
               <span>
                 <a
-                  href="./src/dist/pages/services-terms.html"
+                  href="./src/dist/pages/coming-soon.html"
                   class="text-xs md:text-lg hover:cursor-pointer hover:underline"
+                  aria-label="Get informations about our terms of service"
                 >
                   terms of service
                 </a>
@@ -377,7 +419,7 @@
     </div>
     <!-- body main container end -->
 
-    <!-- js file -->
+    <!-- js scripts -->
     <script src="./src/dist/scripts/index.js"></script>
   </body>
   <!-- body container end -->

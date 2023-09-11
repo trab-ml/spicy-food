@@ -743,6 +743,11 @@ video {
   height: 100vh;
 }
 
+.h-fit {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 .w-2\/3 {
   width: 66.666667%;
 }
