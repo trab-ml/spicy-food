@@ -1,8 +1,9 @@
 # SPICY FOOD
 
-[Jeter un coup d'oeil projet](https://trab-ml.github.io/spicy-food/)
+[View the project](https://trab-ml.github.io/spicy-food/)
 
-Spicy Food est le frontend d’un site web fictif de restaurant, conçu dans le cadre d’un atelier pratique.
-Le projet a pour objectif de combiner développement frontend moderne et bonnes pratiques de travail collaboratif avec Git et GitHub.
+Spicy Food is a frontend project for a fictional restaurant website, developed as part of a hands-on workshop.
 
-Le restaurant, les menus et les contenus sont entièrement fictifs.
+The goal of this project is to showcase modern frontend development practices, along with effective collaboration workflows using Git and GitHub.
+
+The restaurant concept, menu, and all associated content are entirely fictional, designed to focus on user interface design, structure, and user experience.
