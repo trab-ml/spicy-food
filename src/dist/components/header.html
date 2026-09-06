@@ -1,0 +1,107 @@
+<header class="relative w-full h-screen">
+    <img
+        src="./src/dist/assets/imgs/header-hero.png"
+        alt="plants"
+        class="w-full h-screen object-cover"
+    />
+
+    <!-- header main section -->
+    <section>
+        <h1
+            class="absolute top-[45vh] flex place-self-center text-2xl sm:text-5xl text-center font-extrabold text-white lg:top-[50vh] mx-auto"
+        >
+            We take care of what we cook, from our farm to your plate !
+        </h1>
+
+        <div
+            class="absolute top-0 left-0 w-full flex flex-row justify-between items-center text-white"
+        >
+            <div id="menubars">
+                <i
+                    class="m-2 mt-6 ml-6 fa-solid fa-bars text-6xl font-bold md:text-8xl hover:cursor-pointer hover:text-black"
+                ></i>
+            </div>
+
+            <div
+                class="w-[12rem] flex justify-end md:w-[24rem] md:justify-center"
+            >
+                <img
+                    src="./src/dist/assets/imgs/logo-v3.png"
+                    alt="plants"
+                    class="w-2/4 h-full m-2 mt-6 mr-6 object-cover md:w-1/3 md:mr-0 hover:cursor-pointer"
+                    title="Spicy Food"
+                />
+            </div>
+
+            <a
+                href="./src/dist/pages/coming-soon.html"
+                class="xs:hidden md:block w-[13rem] m-2 mt-6 mr-4 p-2 text-center font-extrabold text-3xl border-solid border-2 border-white normal-case hover:bg-black hover:cursor-pointer"
+                aria-label="Make a reservation to eat in our restaurant"
+            >
+                Make a reservation
+            </a>
+        </div>
+    </section>
+    <!-- header main section end -->
+
+    <!-- sidebar section -->
+    <section
+        id="sidebar"
+        class="hidden fixed top-0 w-[18rem] w--1/2 h-screen z-50 bg-black transition-opacity animate-customFadeIn"
+    >
+        <nav id="navbar" class="h-1/2 flex flex-col items-center">
+            <span class="closeSidebarBtn mt-5"
+                ><i
+                    class="fa-solid fa-xmark text-white text-4xl hover:cursor-pointer"
+                ></i
+            ></span>
+
+            <ul class="flex flex-col gap-5 mt-5 uppercase text-white">
+                <li class="hover:cursor-pointer hover:underline">
+                    <span><i class="fa-solid fa-utensils mr-2"></i></span>
+                    <a
+                        href="./src/dist/pages/coming-soon.html"
+                        aria-label="Learn more about our new dishes"
+                        >news</a
+                    >
+                </li>
+                <li class="hover:cursor-pointer hover:underline">
+                    <span><i class="fa-solid fa-calendar-check mr-2"></i></span>
+                    <a
+                        href="./src/dist/pages/coming-soon.html"
+                        aria-label="Make a reservation to eat in our restaurant"
+                        >make a reservation</a
+                    >
+                </li>
+                <li class="hover:cursor-pointer hover:underline">
+                    <span><i class="fa-solid fa-location-dot mr-2"></i></span>
+                    <a
+                        href="./src/dist/pages/coming-soon.html"
+                        aria-label="Use a online map to find our location"
+                        >find us</a
+                    >
+                </li>
+                <li class="hover:cursor-pointer hover:underline">
+                    <span><i class="fa-solid fa-briefcase mr-[4px]"></i></span>
+                    <a
+                        href="./src/dist/pages/coming-soon.html"
+                        aria-label="Learn more about working with us"
+                        >work with us</a
+                    >
+                </li>
+                <li class="hover:cursor-pointer hover:underline">
+                    <span
+                        ><i class="fa-solid fa-phone-volume mr-[4px]"></i
+                    ></span>
+                    <a
+                        href="#footer"
+                        aria-label="Contact us for more information"
+                        class="closeSidebarBtn"
+                        >contact us</a
+                    >
+                </li>
+            </ul>
+        </nav>
+    </section>
+    <!-- sidebar section end -->
+</header>
