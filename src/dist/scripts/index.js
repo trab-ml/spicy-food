@@ -7,7 +7,6 @@ const sidebar = {
   },
 };
 
-// Add event listeners when the document is ready
 document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('menubars').addEventListener('click', sidebar.open);
   document.querySelectorAll('.closeSidebarBtn').forEach(htmlElt => {
